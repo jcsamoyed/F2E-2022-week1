@@ -23,10 +23,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   * {
     font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
   }
-}
-
-nav {
-  background-color: #000;
 }
 </style>

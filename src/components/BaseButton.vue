@@ -16,7 +16,7 @@ export default {
 
 <style lang="scss" scoped>
 button {
-  font-size: 30px;
+  font-size: 16px;
   color: #fff;
   padding: 8px 40px;
   border: none;

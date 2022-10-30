@@ -37,18 +37,24 @@ export default {
 
 <style lang="scss" scoped>
 nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 50px;
+  padding: 12px 80px;
+  background-color: #de611e;
 }
 ul {
   display: flex;
   align-items: center;
-  column-gap: 50px;
+  column-gap: 20px;
   a {
     color: #fff;
-    font-size: 25px;
+    font-size: 16px;
     text-decoration: none;
   }
 }
