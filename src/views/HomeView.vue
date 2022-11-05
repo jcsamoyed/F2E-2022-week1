@@ -3,6 +3,7 @@
     <TheSection1 />
     <TheSection2 />
     <TheSection3 />
+    <TheSection4 />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import TheSection1 from '@/components/TheSection1.vue';
 import TheSection2 from '@/components/TheSection2.vue';
 import TheSection3 from '@/components/TheSection3.vue';
+import TheSection4 from '@/components/TheSection4.vue';
 
 export default {
   name: 'HomeView',
@@ -17,6 +19,7 @@ export default {
     TheSection1,
     TheSection2,
     TheSection3,
+    TheSection4,
   },
 };
 </script>
