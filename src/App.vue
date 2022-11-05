@@ -21,6 +21,7 @@ export default {
   font-family: 'Noto Sans TC', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
   * {
     font-family: 'Noto Sans TC', sans-serif;
     box-sizing: border-box;
