@@ -1,7 +1,8 @@
 <template>
   <section>
-    <div ref="hero" class="hero-wrapper">
-      <img src="@/assets/images/section1/hero.png" alt="The F2E 4th" class="hero" />
+    <div class="hero-wrapper">
+      <div ref="cloud" class="cloud"></div>
+      <div ref="playground" class="playground"></div>
       <div ref="ghost1" class="ghost-1"></div>
       <div ref="ghost2" class="ghost-2"></div>
       <div ref="balloon" class="balloon"></div>
@@ -23,6 +24,20 @@ export default {
         loop: true,
         autoplay: true,
         path: 'lottie/ghost-1.json',
+      });
+      lottie.loadAnimation({
+        container: this.$refs.playground,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'lottie/playground.json',
+      });
+      lottie.loadAnimation({
+        container: this.$refs.cloud,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'lottie/cloud.json',
       });
       lottie.loadAnimation({
         container: this.$refs.ghost2,
@@ -51,11 +66,23 @@ section {
   position: relative;
 }
 .hero-wrapper {
+  display: flex;
+  align-items: center;
   position: relative;
   background-color: #000;
-  padding-top: 154px;
-  padding-bottom: 90px;
-  height: 100%;
+  min-height: 90vh;
+  padding-top: 80px;
+}
+.cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.playground {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .ghost-1 {
   position: absolute;
@@ -93,12 +120,66 @@ section {
   background-repeat: repeat-x;
   z-index: 2;
 }
+
+@media screen and (max-width: 1280px) {
+  .cloud {
+    top: 10%;
+  }
+  .ghost-1 {
+    right: 10%;
+  }
+  .ghost-2 {
+    left: 5%;
+  }
+  .balloon {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cloud {
+    top: 20%;
+  }
+  .ghost-1 {
+    bottom: 30%;
+    width: 150px;
+  }
+  .ghost-2 {
+    bottom: 30%;
+    width: 150px;
+  }
+  .balloon {
+    top: 10%;
+    width: 150px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   section {
     height: 90vh;
   }
+  .cloud {
+    top: 25%;
+  }
   .star-wrapper {
     height: 9vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  section {
+    height: initial;
+    background-color: #000;
+    padding: 20% 0;
+  }
+  .hero-wrapper {
+    min-height: initial;
+  }
+  .playground {
+    transform: scale(110%);
+  }
+  .cloud {
+    top: 25%;
   }
 }
 </style>
