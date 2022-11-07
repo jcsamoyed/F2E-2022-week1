@@ -60,7 +60,7 @@ export default {
       });
       tl.to('.page1', { xPercent: '-100', opacity: 0 });
       tl.to('.page2', { xPercent: '-100', opacity: 0 });
-      // tl.to('.page3', { xPercent: '-100' });
+      tl.to('.page3', { xPercent: '-100' });
     },
   },
   created() {
