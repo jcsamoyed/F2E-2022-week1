@@ -6,6 +6,7 @@
     <TheSection4 />
     <TheSection5 />
     <TheSection6 />
+    <TheSection7 />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import TheSection3 from '@/components/TheSection3.vue';
 import TheSection4 from '@/components/TheSection4.vue';
 import TheSection5 from '@/components/TheSection5.vue';
 import TheSection6 from '@/components/TheSection6.vue';
+import TheSection7 from '@/components/TheSection7.vue';
 
 export default {
   name: 'HomeView',
@@ -26,6 +28,7 @@ export default {
     TheSection4,
     TheSection5,
     TheSection6,
+    TheSection7,
   },
 };
 </script>
