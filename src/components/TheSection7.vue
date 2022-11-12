@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="section7">
     <div class="container">
       <img src="@/assets/images/section7/pumpkin.svg" class="pumpkin pumpkin-left" alt="南瓜" />
       <h3 data-stroke="贊助單位">贊助單位</h3>

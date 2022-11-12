@@ -10,23 +10,23 @@
     </button>
     <ul :class="{ open: isShowMenu }">
       <li>
-        <router-link to="/">活動目的</router-link>
+        <router-link to="/" @click="handleScroll('2', 'end')">活動目的</router-link>
       </li>
       <li>
-        <router-link to="/">關卡資訊</router-link>
+        <router-link to="/" @click="handleScroll('3', 'start')">關卡資訊</router-link>
       </li>
       <li>
-        <router-link to="/">活動說明</router-link>
+        <router-link to="/" @click="handleScroll('5', 'start')">活動說明</router-link>
       </li>
       <li>
-        <router-link to="/">獎項</router-link>
+        <router-link to="/" @click="handleScroll('6', 'start')">獎項</router-link>
       </li>
       <li>
-        <router-link to="/">贊助單位</router-link>
+        <router-link to="/" @click="handleScroll('7', 'start')">贊助單位</router-link>
       </li>
       <li class="btn-wrapper">
         <button @click="shareLink" class="primary yellow">立即分享</button>
-        <button class="primary purple">註冊報名</button>
+        <button @click="goSignUp" class="primary purple">註冊報名</button>
       </li>
     </ul>
   </nav>
@@ -42,6 +42,11 @@ export default {
     };
   },
   methods: {
+    handleScroll(id, block) {
+      document
+        .getElementById(`section${id}`)
+        .scrollIntoView({ behavior: 'smooth', block, inline: 'nearest' });
+    },
     toggleHamburger() {
       this.isShowMenu = !this.isShowMenu;
     },
@@ -50,6 +55,9 @@ export default {
         title: 'The F2E 前端 & UI 修煉精神時光屋 :: 一朵空氣',
         url: this.url,
       });
+    },
+    goSignUp() {
+      window.open('https://2022.thef2e.com/');
     },
   },
 };

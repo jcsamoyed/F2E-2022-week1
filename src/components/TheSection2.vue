@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="section2">
     <img src="@/assets/images/section2/lollipop.png" alt="棒棒糖" class="lollipop left" />
     <div class="booth-wrapper">
       <img

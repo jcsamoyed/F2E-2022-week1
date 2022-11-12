@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="section6">
     <div class="container">
       <h4>• 區區修練已經無法滿足了嗎? 還有比賽等著你! •</h4>
       <h3 data-stroke="評審機制">評審機制</h3>

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="section3">
     <div class="wheel-wrapper">
       <img
         src="@/assets/images/section3/ferris-wheel.png"
