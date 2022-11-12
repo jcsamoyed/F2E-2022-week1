@@ -25,7 +25,7 @@
         <router-link to="/">贊助單位</router-link>
       </li>
       <li class="btn-wrapper">
-        <button class="primary yellow">立即分享</button>
+        <button @click="shareLink" class="primary yellow">立即分享</button>
         <button class="primary purple">註冊報名</button>
       </li>
     </ul>
@@ -37,12 +37,19 @@ export default {
   name: 'TheNavbar',
   data() {
     return {
+      url: window.location.href,
       isShowMenu: false,
     };
   },
   methods: {
     toggleHamburger() {
       this.isShowMenu = !this.isShowMenu;
+    },
+    async shareLink() {
+      await navigator.share({
+        title: 'The F2E 前端 & UI 修煉精神時光屋 :: 一朵空氣',
+        url: this.url,
+      });
     },
   },
 };
@@ -111,6 +118,7 @@ ul {
   cursor: pointer;
   transition-duration: 0.2s;
   &.yellow {
+    display: none;
     background-color: #f9b233;
     &:hover {
       background-color: #ffd384;
@@ -174,6 +182,14 @@ ul {
   }
   .primary {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .primary {
+    &.yellow {
+      display: block;
+    }
   }
 }
 </style>
