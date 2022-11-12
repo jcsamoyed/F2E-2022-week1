@@ -30,4 +30,13 @@ export default {
     box-sizing: border-box;
   }
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: #754aba;
+}
+
+::selection {
+  background: #754aba;
+}
 </style>
