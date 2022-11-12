@@ -230,6 +230,9 @@ p {
       bottom: 24%;
     }
   }
+  .lollipop {
+    top: -30%;
+  }
   .coupon {
     width: 60px;
   }
