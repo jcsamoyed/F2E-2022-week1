@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="section1">
     <div class="hero-wrapper">
       <div ref="cloudAnimate" class="cloud-animate"></div>
       <div ref="cloudAnimateM" class="cloud-animate-m"></div>

@@ -1,7 +1,9 @@
 <template>
   <nav>
     <div class="logo">
-      <router-link to="/"><img src="@/assets/images/logo.svg" alt="The F2E" /></router-link>
+      <router-link to="/" @click="handleScroll('1', 'start')"
+        ><img src="@/assets/images/logo.svg" alt="The F2E"
+      /></router-link>
     </div>
     <button @click="toggleHamburger" class="hamburger">
       <div class="line top"></div>
@@ -26,7 +28,7 @@
       </li>
       <li class="btn-wrapper">
         <button @click="shareLink" class="primary yellow">立即分享</button>
-        <button @click="goSignUp" class="primary purple">註冊報名</button>
+        <button @click="goSignUp" class="primary purple" title="註冊報名">註冊報名</button>
       </li>
     </ul>
   </nav>

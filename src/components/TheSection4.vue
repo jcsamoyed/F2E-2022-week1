@@ -10,7 +10,14 @@
             標籤：視差滾動 <br />
             贊助商：版塊設計
           </p>
-          <button class="primary orange">查看關卡細節</button>
+          <a
+            href="https://2022.thef2e.com/news/week1"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="查看關卡細節"
+            class="primary orange"
+            >查看關卡細節</a
+          >
         </div>
       </div>
       <div class="week-page page2">
@@ -22,7 +29,14 @@
             標籤：Canvas<br />
             贊助商：凱鈿行動科技
           </p>
-          <button class="primary purple">查看關卡細節</button>
+          <a
+            href="https://2022.thef2e.com/news/week2"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="查看關卡細節"
+            class="primary purple"
+            >查看關卡細節</a
+          >
         </div>
       </div>
       <div class="week-page page3">
@@ -34,7 +48,14 @@
             標籤：JS draggable<br />
             贊助商：鈦坦科技
           </p>
-          <button class="primary yellow">查看關卡細節</button>
+          <a
+            href="https://2022.thef2e.com/news/week3"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="查看關卡細節"
+            class="primary yellow"
+            >查看關卡細節</a
+          >
         </div>
       </div>
       <img src="@/assets/images/section4/cloud.png" class="cloud" alt="雲朵" />
@@ -158,6 +179,7 @@ p {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
+  text-decoration: none;
   padding: 16px 18px;
   margin: 0 auto;
   color: #fff;

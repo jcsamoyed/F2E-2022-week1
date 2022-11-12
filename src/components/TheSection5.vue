@@ -528,7 +528,7 @@
       </svg>
     </div>
     <div class="btn-wrapper">
-      <button @click="goSignUp" class="primary yellow">註冊報名</button>
+      <button @click="goSignUp" class="primary yellow" title="註冊報名">註冊報名</button>
     </div>
   </section>
 </template>
