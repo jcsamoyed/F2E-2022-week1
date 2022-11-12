@@ -149,6 +149,9 @@ h3 {
 }
 
 @media screen and (max-width: 640px) {
+  section {
+    background-attachment: scroll;
+  }
   .container {
     width: 95%;
   }

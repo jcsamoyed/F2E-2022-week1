@@ -126,6 +126,7 @@ h3 {
   section {
     background-size: 180%;
     background-position: center center;
+    background-attachment: scroll;
   }
   .pumpkin {
     width: 72px;

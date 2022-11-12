@@ -81,11 +81,15 @@ export default {
           ease: 'expo',
           duration: 1,
         })
-        .to('.coupon-huge', {
-          xPercent: 400,
-          ease: 'expo',
-          duration: 10,
-        });
+        .to(
+          '.coupon-huge',
+          {
+            xPercent: 400,
+            ease: 'expo',
+            duration: 30,
+          },
+          '<',
+        );
     },
   },
   created() {
