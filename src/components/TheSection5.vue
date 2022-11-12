@@ -528,7 +528,7 @@
       </svg>
     </div>
     <div class="btn-wrapper">
-      <button class="primary yellow">註冊報名</button>
+      <button @click="goSignUp" class="primary yellow">註冊報名</button>
     </div>
   </section>
 </template>
@@ -573,6 +573,9 @@ export default {
           });
         },
       });
+    },
+    goSignUp() {
+      window.open('https://2022.thef2e.com/');
     },
   },
   created() {
