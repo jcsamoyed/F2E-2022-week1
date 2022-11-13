@@ -218,7 +218,6 @@ p {
 .cloud {
   position: absolute;
   width: 100%;
-  height: fit-content;
   z-index: 5;
   bottom: -22vw;
 }

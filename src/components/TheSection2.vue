@@ -104,6 +104,7 @@ export default {
 <style lang="scss" scoped>
 section {
   position: relative;
+  padding-top: 5%;
   background-color: #532d83;
   overflow: hidden;
 }
